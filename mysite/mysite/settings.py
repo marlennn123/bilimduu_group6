@@ -102,8 +102,8 @@ SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'SCOPE': ['user:email'],  # Укажите необходимые разрешения
         'VERIFIED_EMAIL': True,
-        'KEY': '2cc0889def36b37f941a',
-        'SECRET': '86ca281b3a0ff75bcd474e231d0f90e070afb55a',
+        # 'KEY': '2cc0889def36b37f941a',
+        # 'SECRET': '86ca281b3a0ff75bcd474e231d0f90e070afb55a',
     },
     "google": {
         # "APPS": [
@@ -213,7 +213,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 LOGIN_REDIRECT_URL = "http://127.0.0.1:8000/car/"
-SIGNUP_REDIRECT_URL = "http://127.0.0.1:8000/car/"
+SIGNUP_REDIRECT_URL = "http://127.0.0.1:8000/accounts/login/"
 
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
 ACCOUNT_USERNAME_MIN_LENGTH = 4

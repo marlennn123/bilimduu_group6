@@ -25,20 +25,20 @@ class CarViewSet(viewsets.ModelViewSet):
     search_fields = ['name', 'category', 'marka', 'model', ]
     ordering_fields = ('price', 'mileage', 'year',)
 
-    def list(self, request, *args, **kwargs):
-        queryset = self.filter_queryset(self.get_queryset())
-
-        # Применяем сортировку
-        queryset = self.filter_queryset(queryset)
-
-        page = self.paginate_queryset(queryset)
-
-        if page is not None:
-            serializer = self.get_serializer(page, many=True)
-            return self.get_paginated_response(serializer.data)
-
-        serializer = self.get_serializer(queryset, many=True)
-        return Response(serializer.data)
+    # def list(self, request, *args, **kwargs):
+    #     queryset = self.filter_queryset(self.get_queryset())
+    #
+    #     # Применяем сортировку
+    #     queryset = self.filter_queryset(queryset)
+    #
+    #     page = self.paginate_queryset(queryset)
+    #
+    #     if page is not None:
+    #         serializer = self.get_serializer(page, many=True)
+    #         return self.get_paginated_response(serializer.data)
+    #
+    #     serializer = self.get_serializer(queryset, many=True)
+    #     return Response(serializer.data)
 
 
 class CarDetailViewSet(viewsets.ModelViewSet):
