@@ -1,10 +1,8 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, User
 from django.db import models
 
 
-class CustomUser(AbstractUser):
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100, blank=True, null=True)
+class CustomUser(User):
     age = models.IntegerField(blank=True, null=True)
     country = models.CharField(max_length=100, blank=True, null=True)
 

@@ -203,7 +203,7 @@ ACCOUNT_FORMS = {
 }
 
 SITE_ID = 1
-AUTH_USER_MODEL = 'auction.CustomUser'
+# AUTH_USER_MODEL = 'auction.CustomUser'
 
 
 AUTHENTICATION_BACKENDS = [
