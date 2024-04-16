@@ -106,13 +106,13 @@ SOCIALACCOUNT_PROVIDERS = {
         'SECRET': '86ca281b3a0ff75bcd474e231d0f90e070afb55a',
     },
     "google": {
-        "APPS": [
-            {
-                "client_id": "419002804448-..googleusercontent.com",
-                "secret": "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",
-                "key": ""
-            },
-        ],
+        # "APPS": [
+        #     {
+        #         "client_id": "419002804448-..googleusercontent.com",
+        #         "secret": "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",
+        #         "key": ""
+        #     },
+        # ],
         # These are provider-specific settings that can only be
         # listed here:
         "SCOPE": [
