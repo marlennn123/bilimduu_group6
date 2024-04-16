@@ -98,6 +98,33 @@ DATABASES = {
 }
 
 
+SOCIALACCOUNT_PROVIDERS = {
+    'github': {
+        'SCOPE': ['user:email'],  # Укажите необходимые разрешения
+        'VERIFIED_EMAIL': True,
+        'KEY': '2cc0889def36b37f941a',
+        'SECRET': '86ca281b3a0ff75bcd474e231d0f90e070afb55a',
+    },
+    "google": {
+        "APPS": [
+            {
+                "client_id": "419002804448-..googleusercontent.com",
+                "secret": "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",
+                "key": ""
+            },
+        ],
+        # These are provider-specific settings that can only be
+        # listed here:
+        "SCOPE": [
+            "profile",
+            "email",
+        ],
+        "AUTH_PARAMS": {
+            "access_type": "online",
+        },
+    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
