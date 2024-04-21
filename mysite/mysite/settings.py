@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -158,19 +157,19 @@ USE_L10N = True
 USE_TZ = True
 
 
-LANGUAGES = [
-    ('ru', 'Russian'),
-    ('en', 'English'),
-    ('ky', 'Kyrgyz'),
-]
+# LANGUAGES = [
+#     ('ru', 'Russian'),
+#     ('en', 'English'),
+#     ('ky', 'Kyrgyz'),
+# ]
 
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
-
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
-
-MODELTRANSLATION_LANGUAGES = ('ru', 'en', 'ky')
+#
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
+#
+# MODELTRANSLATION_LANGUAGES = ('ru', 'en', 'ky')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
